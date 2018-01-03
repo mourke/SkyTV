@@ -112,6 +112,10 @@ class AccountTableViewController: UITableViewController, AuthenticatorDelegate {
             request.addValue("ADRUM", forHTTPHeaderField: "isAjax:true")
             request.addValue("ADRUM_1", forHTTPHeaderField: "isMobile:true")
             
+            if let credential = API.Authenticator.shared.credential {
+                request.addValue("skyCAdt01=ios; skyCEsa01=\(credential.accessToken)", forHTTPHeaderField: "Cookie")
+            }
+            
             destination.request = request
         }
     }
