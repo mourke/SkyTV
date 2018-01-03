@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="FAE-uW-n1y" customClass="PosterCollectionViewCell" customModule="SkyTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="104" height="175.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="104" height="175.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="PreloadAsset-Movie" translatesAutoresizingMaskIntoConstraints="NO" id="FxM-zx-cWR">
+                        <rect key="frame" x="0.0" y="0.0" width="104" height="156.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="FxM-zx-cWR" secondAttribute="height" multiplier="2:3" id="hHg-WN-2TS"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view hidden="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="3Nn-jV-BHH">
+                        <rect key="frame" x="0.0" y="0.0" width="104" height="156.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.39846500880000002" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Title" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXb-tN-nHz">
+                        <rect key="frame" x="0.0" y="161.5" width="104" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="uXb-tN-nHz" firstAttribute="top" secondItem="FxM-zx-cWR" secondAttribute="bottom" constant="5" id="3yM-Pp-4dV"/>
+                <constraint firstItem="FxM-zx-cWR" firstAttribute="top" secondItem="FAE-uW-n1y" secondAttribute="top" id="B0G-K8-ZGn"/>
+                <constraint firstItem="3Nn-jV-BHH" firstAttribute="top" secondItem="FxM-zx-cWR" secondAttribute="top" id="EEf-h0-Qvp"/>
+                <constraint firstItem="FxM-zx-cWR" firstAttribute="leading" secondItem="FAE-uW-n1y" secondAttribute="leading" id="Hig-eg-8fC"/>
+                <constraint firstItem="uXb-tN-nHz" firstAttribute="leading" secondItem="FAE-uW-n1y" secondAttribute="leading" id="IIP-LC-dqy"/>
+                <constraint firstItem="3Nn-jV-BHH" firstAttribute="trailing" secondItem="FxM-zx-cWR" secondAttribute="trailing" id="RKe-V6-JX2"/>
+                <constraint firstItem="3Nn-jV-BHH" firstAttribute="bottom" secondItem="FxM-zx-cWR" secondAttribute="bottom" id="VgP-TD-bZY"/>
+                <constraint firstAttribute="trailing" secondItem="uXb-tN-nHz" secondAttribute="trailing" id="gpw-Xy-IqE"/>
+                <constraint firstItem="uXb-tN-nHz" firstAttribute="bottom" secondItem="6Hx-2X-WvU" secondAttribute="bottom" id="nDW-0n-J9I"/>
+                <constraint firstItem="3Nn-jV-BHH" firstAttribute="leading" secondItem="FxM-zx-cWR" secondAttribute="leading" id="wGN-zU-VBA"/>
+                <constraint firstAttribute="trailing" secondItem="FxM-zx-cWR" secondAttribute="trailing" id="yVv-oz-9Yu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="6Hx-2X-WvU"/>
+            <size key="customSize" width="108" height="185"/>
+            <connections>
+                <outlet property="highlightView" destination="3Nn-jV-BHH" id="LaI-eK-AuS"/>
+                <outlet property="imageView" destination="FxM-zx-cWR" id="eb4-gk-PgW"/>
+                <outlet property="textLabel" destination="uXb-tN-nHz" id="giK-5P-fqE"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="100"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="PreloadAsset-Movie" width="200" height="300"/>
+    </resources>
+</document>

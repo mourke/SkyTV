@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="HeroCollectionViewCell" customModule="SkyTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="348"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="348"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="750" insetsLayoutMarginsFromSafeArea="NO" image="PreloadAsset-Movie" translatesAutoresizingMaskIntoConstraints="NO" id="iF1-WJ-hE6">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="192.66666666666666"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="iF1-WJ-hE6" secondAttribute="height" multiplier="1428:803" id="ghk-Sn-lPL"/>
+                            <constraint firstAttribute="width" secondItem="iF1-WJ-hE6" secondAttribute="height" multiplier="2:3" id="hVC-EQ-sMZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hVC-EQ-sMZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact" image="PreloadAsset-Generic"/>
+                    </imageView>
+                    <view hidden="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7f-IR-WcP">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="192.66666666666666"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.39846500880000002" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="800" insetsLayoutMarginsFromSafeArea="NO" text="LABEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCn-6i-9Fx">
+                        <rect key="frame" x="0.0" y="200.66666666666666" width="343" height="15.666666666666657"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <color key="textColor" red="0.46274509800000002" green="0.94117647059999998" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="800" insetsLayoutMarginsFromSafeArea="NO" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0U-hK-sQk">
+                        <rect key="frame" x="0.0" y="224.33333333333334" width="343" height="25.333333333333343"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="500" insetsLayoutMarginsFromSafeArea="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxY-kN-qOg">
+                        <rect key="frame" x="0.0" y="258" width="343" height="90"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="rect" keyPath="textContainerInset">
+                                <rect key="value" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="textContainer.lineFragmentPadding">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="N7f-IR-WcP" firstAttribute="leading" secondItem="iF1-WJ-hE6" secondAttribute="leading" id="EOE-WL-ahQ"/>
+                <constraint firstItem="iF1-WJ-hE6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IAN-27-dZo"/>
+                <constraint firstItem="X0U-hK-sQk" firstAttribute="centerY" secondItem="iF1-WJ-hE6" secondAttribute="centerY" id="Ntb-X7-pOK"/>
+                <constraint firstItem="X0U-hK-sQk" firstAttribute="leading" secondItem="iF1-WJ-hE6" secondAttribute="trailing" constant="15" id="OZY-4a-xtX"/>
+                <constraint firstItem="iF1-WJ-hE6" firstAttribute="bottom" secondItem="gTV-IL-0wX" secondAttribute="bottom" id="XIy-gy-dCi"/>
+                <constraint firstItem="BxY-kN-qOg" firstAttribute="leading" secondItem="X0U-hK-sQk" secondAttribute="leading" id="Yrg-A9-Iay"/>
+                <constraint firstAttribute="trailing" secondItem="X0U-hK-sQk" secondAttribute="trailing" id="bTs-la-v6E"/>
+                <constraint firstAttribute="trailing" secondItem="OCn-6i-9Fx" secondAttribute="trailing" id="czB-xK-sfH"/>
+                <constraint firstItem="OCn-6i-9Fx" firstAttribute="top" secondItem="iF1-WJ-hE6" secondAttribute="bottom" constant="8" symbolic="YES" id="gby-Jm-joD"/>
+                <constraint firstItem="BxY-kN-qOg" firstAttribute="trailing" secondItem="gTV-IL-0wX" secondAttribute="trailing" id="h0P-d9-Qq8"/>
+                <constraint firstItem="iF1-WJ-hE6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="h56-Ve-rsv"/>
+                <constraint firstAttribute="bottom" secondItem="BxY-kN-qOg" secondAttribute="bottom" constant="15" id="i3S-GY-Xfm">
+                    <variation key="widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="N7f-IR-WcP" firstAttribute="top" secondItem="iF1-WJ-hE6" secondAttribute="top" id="iz7-TO-vnN"/>
+                <constraint firstItem="N7f-IR-WcP" firstAttribute="trailing" secondItem="iF1-WJ-hE6" secondAttribute="trailing" id="mJl-tk-vQY"/>
+                <constraint firstItem="X0U-hK-sQk" firstAttribute="leading" secondItem="iF1-WJ-hE6" secondAttribute="leading" id="mTy-of-sly"/>
+                <constraint firstItem="BxY-kN-qOg" firstAttribute="top" secondItem="X0U-hK-sQk" secondAttribute="bottom" constant="8" symbolic="YES" id="nSj-I5-g4Q"/>
+                <constraint firstItem="OCn-6i-9Fx" firstAttribute="leading" secondItem="X0U-hK-sQk" secondAttribute="leading" id="sSR-Ra-lTD"/>
+                <constraint firstItem="N7f-IR-WcP" firstAttribute="bottom" secondItem="iF1-WJ-hE6" secondAttribute="bottom" id="sdU-5s-sZZ"/>
+                <constraint firstAttribute="trailing" secondItem="iF1-WJ-hE6" secondAttribute="trailing" id="xWV-Uw-7Ki"/>
+                <constraint firstItem="X0U-hK-sQk" firstAttribute="top" secondItem="OCn-6i-9Fx" secondAttribute="bottom" constant="8" symbolic="YES" id="yax-Cd-WHA"/>
+            </constraints>
+            <size key="customSize" width="508" height="352"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="XIy-gy-dCi"/>
+                    <exclude reference="Ntb-X7-pOK"/>
+                    <exclude reference="OZY-4a-xtX"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="detailTextLabel" destination="OCn-6i-9Fx" id="iJ0-4G-4c9"/>
+                <outlet property="highlightView" destination="N7f-IR-WcP" id="Ga1-M8-XQP"/>
+                <outlet property="imageView" destination="iF1-WJ-hE6" id="il0-kF-Mtf"/>
+                <outlet property="textLabel" destination="X0U-hK-sQk" id="mVu-MJ-hp8"/>
+                <outlet property="textView" destination="BxY-kN-qOg" id="SaY-v1-Teh"/>
+                <outletCollection property="compactConstraints" destination="ghk-Sn-lPL" collectionClass="NSMutableArray" id="iYB-ge-Oiw"/>
+                <outletCollection property="regularConstraints" destination="hVC-EQ-sMZ" collectionClass="NSMutableArray" id="bLb-Ny-3wD"/>
+                <outletCollection property="regularConstraints" destination="XIy-gy-dCi" collectionClass="NSMutableArray" id="a8s-gD-faS"/>
+                <outletCollection property="compactConstraints" destination="xWV-Uw-7Ki" collectionClass="NSMutableArray" id="ge6-t3-YfI"/>
+                <outletCollection property="compactConstraints" destination="gby-Jm-joD" collectionClass="NSMutableArray" id="WAj-LS-0a4"/>
+                <outletCollection property="regularConstraints" destination="Ntb-X7-pOK" collectionClass="NSMutableArray" id="8Ok-62-Z1j"/>
+                <outletCollection property="regularConstraints" destination="OZY-4a-xtX" collectionClass="NSMutableArray" id="jYY-vD-MpJ"/>
+                <outletCollection property="compactConstraints" destination="mTy-of-sly" collectionClass="NSMutableArray" id="7Z9-IQ-AUq"/>
+            </connections>
+            <point key="canvasLocation" x="259.5" y="244"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="PreloadAsset-Generic" width="273" height="153"/>
+        <image name="PreloadAsset-Movie" width="133" height="200"/>
+    </resources>
+</document>
