@@ -10,6 +10,10 @@ SkyTV is a GUI overhaul of the dated SkyGo streaming app.
 
 ## Screenshots
 
+iPad                       |  iPhone
+:-------------------------:|:-------------------------:
+![Home~iPad](https://raw.githubusercontent.com/mourke/SkyTV/master/Assets/Home~iPad.png)  |  ![Home~iPhone](https://raw.githubusercontent.com/mourke/SkyTV/master/Assets/Home~iPhone.png) 
+![Sports~iPad](https://raw.githubusercontent.com/mourke/SkyTV/master/Assets/Sports~iPad.png)  |  ![Cinema~iPhone](https://raw.githubusercontent.com/mourke/SkyTV/master/Assets/Cinema~iPhone.png)
 
 
 ## CocoaPods
